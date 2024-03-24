@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,10 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap"
-      rel="stylesheet" />
-      <base href="https://aleksagrri.github.io/sem-demo/" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap" rel="stylesheet" />
+    <base href="https://aleksagrri.github.io/sem-demo/" />
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -45,19 +45,63 @@
                 </div>
             </div>
             <nav>
-                <div class="navigation-list">
-                    <a href="/sem-demo/main-page.html" class="nav-link active-link">Главная</a>
+                <div class="navigation-list topmenu">
+                    <a href="/sem-demo/main-page.html" class="nav-link">Главная</a>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/about-seminarii.html" class="nav-link">Семинария</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/about-seminarii.html" class="nav-link dropbtn active-link">Семинария</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/about-seminarii.html">О семинарии</a>
+                            <a href="/sem-demo/history-seminarii.html" class="nav-link">История</a>
+                            <a href="/sem-demo/diploms.html" class="nav-link">Документы</a>
+                            <a href="/sem-demo/professors.html" class="nav-link">Профессорско-преподавательская
+                                корпорация</a>
+                            <a href="/sem-demo/faivorit-students.html" class="nav-link">Знаменитые выпускники</a>
+                            <a href="/sem-demo/diploms.html" class="nav-link">Дипломные работы</a>
+                        </div>
+                    </div>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/abitur.html" class="nav-link">Абитуриентам</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/abitur.html" class="nav-link ">Абитуриентам</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/abitur.html" class="nav-link">Абитуриентам</a>
+                            <a href="/sem-demo/abitur-offline.html" class="nav-link">Абитуриентам очная форма</a>
+                        </div>
+                    </div>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/student.html" class="nav-link">Стундентам</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/student.html" class="nav-link">Стундентам</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/student.html" class="nav-link">Стундентам</a>
+                            <a href="/sem-demo/student-docs.html" class="nav-link">Нормативные документы для
+                                студентов</a>
+                            <a href="/sem-demo/student-info.html" class="nav-link">Информация для студентов</a>
+                            <a href="/sem-demo/student-offline.html" class="nav-link">Студентам - заочная форма</a>
+                            <a href="/sem-demo/student-online.html" class="nav-link">Студентам - очная форма</a>
+                        </div>
+                    </div>
+                    <span class="nav-line"></span>
+                    <div class="dropdown">
+                        <a href="/sem-demo/course.html" class="nav-link">Курсы</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/course.html" class="nav-link">Курсы</a>
+                            <a href="/sem-demo/course-podg.html" class="nav-link">Подготовительные курсы</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="navigation-list">
+                <div class="navigation-list topmenu">
                     <a href="#" class="nav-link">Публикации</a>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/magazin-number.html" class="nav-link">Журнал</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/about-magazine.html" class="nav-link ">Журнал</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/about-magazine.html" class="nav-link">Журнал</a>
+                            <a href="/sem-demo/magazin-number.html" class="nav-link">Журнал - все номера</a>
+                            <a href="/sem-demo/magazine-open.html" class="nav-link">Журнал открытая</a>
+                            <a href="/sem-demo/mgazine-achive.html" class="nav-link">Архив всех номеров</a>
+                            <a href="/sem-demo/place-sale.html" class="nav-link">Журнал точки продаж</a>
+                        </div>
+                    </div>
                     <span class="nav-line"></span>
                     <a href="#" class="nav-link">Храм</a>
                     <span class="nav-line"></span>
@@ -71,13 +115,17 @@
     <main>
         <div class="container-main">
             <h1>Знаменитые выпускники</h1>
-            <div class="description-favorite">Данной рубрика посвящена выдающимся деятелям, бывшим в разное время воспитанниками Минской Духовной Семинарии и проявившим себя впоследствии на различных поприщах церковного, научного и общественного служения</div>
+            <div class="description-favorite">Данной рубрика посвящена выдающимся деятелям, бывшим в разное время
+                воспитанниками Минской Духовной Семинарии и проявившим себя впоследствии на различных поприщах
+                церковного, научного и общественного служения</div>
             <div class="graduate-list">
                 <a href="#" class="graduate-card">
                     <img src="./images/graduate/photo.png" alt="" class="graduate-photo">
                     <div class="graduate-text">
                         <div class="graduate-title">Иосиф (Осип) Антонович Гошкевич</div>
-                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции и...</div>
+                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать
+                            дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции
+                            и...</div>
                         <div class="graduate-link">Подробнее</div>
                     </div>
                 </a>
@@ -85,7 +133,9 @@
                     <img src="./images/graduate/photo.png" alt="" class="graduate-photo">
                     <div class="graduate-text">
                         <div class="graduate-title">Иосиф (Осип) Антонович Гошкевич</div>
-                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции и...</div>
+                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать
+                            дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции
+                            и...</div>
                         <div class="graduate-link">Подробнее</div>
                     </div>
                 </a>
@@ -93,7 +143,9 @@
                     <img src="./images/graduate/photo.png" alt="" class="graduate-photo">
                     <div class="graduate-text">
                         <div class="graduate-title">Иосиф (Осип) Антонович Гошкевич</div>
-                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции и...</div>
+                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать
+                            дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции
+                            и...</div>
                         <div class="graduate-link">Подробнее</div>
                     </div>
                 </a>
@@ -101,7 +153,9 @@
                     <img src="./images/graduate/photo.png" alt="" class="graduate-photo">
                     <div class="graduate-text">
                         <div class="graduate-title">Иосиф (Осип) Антонович Гошкевич</div>
-                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции и...</div>
+                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать
+                            дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции
+                            и...</div>
                         <div class="graduate-link">Подробнее</div>
                     </div>
                 </a>
@@ -109,7 +163,9 @@
                     <img src="./images/graduate/photo.png" alt="" class="graduate-photo">
                     <div class="graduate-text">
                         <div class="graduate-title">Иосиф (Осип) Антонович Гошкевич</div>
-                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции и...</div>
+                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать
+                            дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции
+                            и...</div>
                         <div class="graduate-link">Подробнее</div>
                     </div>
                 </a>
@@ -117,7 +173,9 @@
                     <img src="./images/graduate/photo.png" alt="" class="graduate-photo">
                     <div class="graduate-text">
                         <div class="graduate-title">Иосиф (Осип) Антонович Гошкевич</div>
-                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции и...</div>
+                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать
+                            дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции
+                            и...</div>
                         <div class="graduate-link">Подробнее</div>
                     </div>
                 </a>
@@ -125,30 +183,35 @@
                     <img src="./images/graduate/photo.png" alt="" class="graduate-photo">
                     <div class="graduate-text">
                         <div class="graduate-title">Иосиф (Осип) Антонович Гошкевич</div>
-                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции и...</div>
+                        <div class="graduate-description">Когда в середине XIX в. Россия впервые начала устанавливать
+                            дипломатические отношения с Японией, страной, многие столетия находившейся в самоизоляции
+                            и...</div>
                         <div class="graduate-link">Подробнее</div>
                     </div>
                 </a>
-                
-            </div>    
+
+            </div>
             <div class="pagination">
                 <a class="pagination-tab disabled">
                     <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" fill="#66AADD"/>
-                    </svg>                        
+                        <path d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z"
+                            fill="#66AADD" />
+                    </svg>
                 </a>
                 <a class="pagination-page active">1</a>
                 <a class="pagination-page">2</a>
                 <a class="pagination-page">3</a>
                 <a class="pagination-tab">
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12" fill="none">
-                        <path d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z" fill="#66AADD"/>
+                        <path d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z"
+                            fill="#66AADD" />
                     </svg>
                 </a>
             </div>
         </div>
 
-            </main>
-            <script>document.querySelectorAll("a").forEach((item) => {item.href = "https://aleksagrri.github.io/sem-demo/" + item.href.split('/').pop()})</script>
+    </main>
+    <script>document.querySelectorAll("a").forEach((item) => { item.href = "https://aleksagrri.github.io/sem-demo/" + item.href.split('/').pop() })</script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap" rel="stylesheet" />
     <base href="https://aleksagrri.github.io/sem-demo/" />
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -43,19 +45,63 @@
                 </div>
             </div>
             <nav>
-                <div class="navigation-list">
-                    <a href="/sem-demo/main-page.html" class="nav-link active-link">Главная</a>
+                <div class="navigation-list topmenu">
+                    <a href="/sem-demo/main-page.html" class="nav-link">Главная</a>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/about-seminarii.html" class="nav-link">Семинария</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/about-seminarii.html" class="nav-link dropbtn">Семинария</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/about-seminarii.html">О семинарии</a>
+                            <a href="/sem-demo/history-seminarii.html" class="nav-link">История</a>
+                            <a href="/sem-demo/diploms.html" class="nav-link">Документы</a>
+                            <a href="/sem-demo/professors.html" class="nav-link">Профессорско-преподавательская
+                                корпорация</a>
+                            <a href="/sem-demo/faivorit-students.html" class="nav-link">Знаменитые выпускники</a>
+                            <a href="/sem-demo/diploms.html" class="nav-link">Дипломные работы</a>
+                        </div>
+                    </div>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/abitur.html" class="nav-link">Абитуриентам</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/abitur.html" class="nav-link ">Абитуриентам</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/abitur.html" class="nav-link">Абитуриентам</a>
+                            <a href="/sem-demo/abitur-offline.html" class="nav-link">Абитуриентам очная форма</a>
+                        </div>
+                    </div>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/student.html" class="nav-link">Стундентам</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/student.html" class="nav-link">Стундентам</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/student.html" class="nav-link">Стундентам</a>
+                            <a href="/sem-demo/student-docs.html" class="nav-link">Нормативные документы для
+                                студентов</a>
+                            <a href="/sem-demo/student-info.html" class="nav-link">Информация для студентов</a>
+                            <a href="/sem-demo/student-offline.html" class="nav-link">Студентам - заочная форма</a>
+                            <a href="/sem-demo/student-online.html" class="nav-link">Студентам - очная форма</a>
+                        </div>
+                    </div>
+                    <span class="nav-line"></span>
+                    <div class="dropdown">
+                        <a href="/sem-demo/course.html" class="nav-link active-link">Курсы</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/course.html" class="nav-link">Курсы</a>
+                            <a href="/sem-demo/course-podg.html" class="nav-link">Подготовительные курсы</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="navigation-list">
+                <div class="navigation-list topmenu">
                     <a href="#" class="nav-link">Публикации</a>
                     <span class="nav-line"></span>
-                    <a href="/sem-demo/magazin-number.html" class="nav-link">Журнал</a>
+                    <div class="dropdown">
+                        <a href="/sem-demo/about-magazine.html" class="nav-link">Журнал</a>
+                        <div class="dropdown-content">
+                            <a href="/sem-demo/about-magazine.html" class="nav-link">Журнал</a>
+                            <a href="/sem-demo/magazin-number.html" class="nav-link">Журнал - все номера</a>
+                            <a href="/sem-demo/magazine-open.html" class="nav-link">Журнал открытая</a>
+                            <a href="/sem-demo/mgazine-achive.html" class="nav-link">Архив всех номеров</a>
+                            <a href="/sem-demo/place-sale.html" class="nav-link">Журнал точки продаж</a>
+                        </div>
+                    </div>
                     <span class="nav-line"></span>
                     <a href="#" class="nav-link">Храм</a>
                     <span class="nav-line"></span>
@@ -67,115 +113,123 @@
         </div>
     </header>
     <main>
-        
-            <section class="main-slider course-main-block" style="background-image: url(./images/courseBg.png)">
-                <div class="container swiper-wrapper">
-                    <div class="slide">
-                        <div class="course-prev-badge">
-                            <div class="course-prev-badge-text">Дата проведения:</div>
-                            <div class="course-prev-badge-date">с 15 мая по 14 июня 2024 г.</div>
-                        </div>
-                        <div class="slid-description">
-                            <div class="slide-title course-prev">
-                                Подготовительные курсы для абитуриентов духовной школы
-                            </div>
-                            <div class="slide-subtitle">
-                                Курсы ориентированы на абитуриентов, желающих поступить в Минскую духовную семинарию  на одну из образовательных программ
-                            </div>
-                        </div>
+
+        <section class="main-slider course-main-block" style="background-image: url(./images/courseBg.png)">
+            <div class="container swiper-wrapper">
+                <div class="slide">
+                    <div class="course-prev-badge">
+                        <div class="course-prev-badge-text">Дата проведения:</div>
+                        <div class="course-prev-badge-date">с 15 мая по 14 июня 2024 г.</div>
                     </div>
-                </div>
-            </section>
-            <div class="container-main">
-                <div class="course-podg-title-block">
-                    Для образовательных программ:
-                </div>
-                <div class="course-podg-list">
-                    <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
-                        <div class="course-podg-gradient">
-                            <div class="course-podg-card">Богословско-пастырская специализация (очная/заочная форма)</div>
+                    <div class="slid-description">
+                        <div class="slide-title course-prev">
+                            Подготовительные курсы для абитуриентов духовной школы
+                        </div>
+                        <div class="slide-subtitle">
+                            Курсы ориентированы на абитуриентов, желающих поступить в Минскую духовную семинарию  на
+                            одну из образовательных программ
                         </div>
                     </div>
-                    <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
-                        <div class="course-podg-gradient">
-                            <div class="course-podg-card">Богословско-педагогическая специализация (заочная форма)</div>
-                        </div>
-                    </div>
-                    <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
-                        <div class="course-podg-gradient">
-                            <div class="course-podg-card">Регентская специализация (очная/заочная форма)</div>
-                        </div>
-                    </div>
-                    <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
-                        <div class="course-podg-gradient">
-                            <div class="course-podg-card">Иконописная специализация (очная/заочная форма)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-podg-subtitle-block">
-                    Подготовительные курсы включают в себя занятия по дисциплинам, входящим в программу вступительных испытаний в Минскую духовную семинарию:
-                </div>
-                <div class="course-podg-programm-list">
-                    <div class="programm-list-item">Библейская история Ветхого Завета</div>
-                    <div class="programm-list-item">Библейская история Нового Завета</div>
-                    <div class="programm-list-item">Катехизис (основы православного вероучения)</div>
-                    <div class="programm-list-item">Церковная история</div>
-                    <div class="programm-list-item">Церковный устав</div>
-                    <div class="programm-list-item">Церковное пение, чтение на церковнославянском языке Псалтири</div>
-                </div>
-                <div class="course-podg-subtitle-block">
-                    Занятия будут проходить дистанционно на платформе <a href="#" class="course-link-webnar">webinar</a> два раза в неделю.
-                </div>
-                <div class="course-podg-subtitle-block" style="margin-top: 50px;">
-                    Во время обучения на подготовительных курсах для слушателей будут организованы встречи с представителями администрации, на которых можно будет получить ответы на все вопросы, касающиеся поступления. 
-                </div>
-                <div class="course-podg-subtitle-block" style="margin-top: 50px;">
-                    Обучение на курсах <div class="cousre-subtitle-secondary">Бесплатно</div>
-                </div>
-                <div class="course-podg-subtitle-block">
-                    Желающие пройти обучение должны заполнить анкету. После заполнения анкеты будут выслана форма прошения
-                </div>
-                <div class="programm-order">
-                    <div class="programm-order-item">
-                        <div class="order-item-number">1</div>
-                        <div class="programm-list-item order"><img src="./images/courses/icon-1.svg" alt=""></div>
-                        <div class="order-item-description">Заполнить анкету</div>
-                    </div>
-                    <div class="programm-order-item">
-                        <div class="order-item-number">2</div>
-                        <div class="programm-list-item order"><img src="./images/courses/icon-1.svg" alt=""></div>
-                        <div class="order-item-description">Форма прошения</div>
-                    </div>
-                    <div class="programm-order-item">
-                        <div class="order-item-number">3</div>
-                        <div class="programm-list-item order"><img src="./images/courses/icon-2.svg" alt=""></div>
-                        <div class="order-item-description">Зачисление на подготовительные курсы</div>
-                    </div>
-                </div>
-                <div class="course-viber-banner">
-                    <div class="viber-banner-text">Расписание занятий и дополнительная информация об обучении будет сообщена всем участникам посредством электронной почты или через <span>VIBER</span></div>
-                    <img src="./images/courses/viber-icon.png" alt="">
-                </div>
-                <div class="course-contacts-banner">
-                    <div class="contacts-banner-text">
-                        <div class="contacts-banner-title">Контакты</div>
-                        <div class="contacts-banner-subtitle">По вопросам, связанным с регистрацией, следует обращаться по номеру телефона либо e-mail:</div>
-                        <div class="contacts-banner-item" style="margin-top: 30px;">
-                            <div class="contacts-banner-item-title">Тел.:</div>
-                            <div class="contacts-banner-item-text">+375 29 587-66-81</div>
-                            <div class="contacts-banner-item-description"><img src="./images/courses/viber-icon-2.png" alt=""></div>
-                        </div>
-                        <div class="contacts-banner-item" style="margin-top: 25px;">
-                            <div class="contacts-banner-item-title">E-mail:</div>
-                            <div class="contacts-banner-item-text" style="text-decoration: underline;">info@minds.by</div>
-                            <div class="contacts-banner-item-description">Вера Викторовна</div>
-                        </div>
-                    </div>
-                    <img class="contacts-banner-logo" src="./images/abitur/new-logo.png" alt="">
                 </div>
             </div>
-       
+        </section>
+        <div class="container-main">
+            <div class="course-podg-title-block">
+                Для образовательных программ:
+            </div>
+            <div class="course-podg-list">
+                <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
+                    <div class="course-podg-gradient">
+                        <div class="course-podg-card">Богословско-пастырская специализация (очная/заочная форма)</div>
+                    </div>
+                </div>
+                <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
+                    <div class="course-podg-gradient">
+                        <div class="course-podg-card">Богословско-педагогическая специализация (заочная форма)</div>
+                    </div>
+                </div>
+                <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
+                    <div class="course-podg-gradient">
+                        <div class="course-podg-card">Регентская специализация (очная/заочная форма)</div>
+                    </div>
+                </div>
+                <div class="course-podg-item" style="background-image: url(./images/announcements.png);">
+                    <div class="course-podg-gradient">
+                        <div class="course-podg-card">Иконописная специализация (очная/заочная форма)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-podg-subtitle-block">
+                Подготовительные курсы включают в себя занятия по дисциплинам, входящим в программу вступительных
+                испытаний в Минскую духовную семинарию:
+            </div>
+            <div class="course-podg-programm-list">
+                <div class="programm-list-item">Библейская история Ветхого Завета</div>
+                <div class="programm-list-item">Библейская история Нового Завета</div>
+                <div class="programm-list-item">Катехизис (основы православного вероучения)</div>
+                <div class="programm-list-item">Церковная история</div>
+                <div class="programm-list-item">Церковный устав</div>
+                <div class="programm-list-item">Церковное пение, чтение на церковнославянском языке Псалтири</div>
+            </div>
+            <div class="course-podg-subtitle-block">
+                Занятия будут проходить дистанционно на платформе <a href="#" class="course-link-webnar">webinar</a> два
+                раза в неделю.
+            </div>
+            <div class="course-podg-subtitle-block" style="margin-top: 50px;">
+                Во время обучения на подготовительных курсах для слушателей будут организованы встречи с представителями
+                администрации, на которых можно будет получить ответы на все вопросы, касающиеся поступления.
+            </div>
+            <div class="course-podg-subtitle-block" style="margin-top: 50px;">
+                Обучение на курсах <div class="cousre-subtitle-secondary">Бесплатно</div>
+            </div>
+            <div class="course-podg-subtitle-block">
+                Желающие пройти обучение должны заполнить анкету. После заполнения анкеты будут выслана форма прошения
+            </div>
+            <div class="programm-order">
+                <div class="programm-order-item">
+                    <div class="order-item-number">1</div>
+                    <div class="programm-list-item order"><img src="./images/courses/icon-1.svg" alt=""></div>
+                    <div class="order-item-description">Заполнить анкету</div>
+                </div>
+                <div class="programm-order-item">
+                    <div class="order-item-number">2</div>
+                    <div class="programm-list-item order"><img src="./images/courses/icon-1.svg" alt=""></div>
+                    <div class="order-item-description">Форма прошения</div>
+                </div>
+                <div class="programm-order-item">
+                    <div class="order-item-number">3</div>
+                    <div class="programm-list-item order"><img src="./images/courses/icon-2.svg" alt=""></div>
+                    <div class="order-item-description">Зачисление на подготовительные курсы</div>
+                </div>
+            </div>
+            <div class="course-viber-banner">
+                <div class="viber-banner-text">Расписание занятий и дополнительная информация об обучении будет сообщена
+                    всем участникам посредством электронной почты или через <span>VIBER</span></div>
+                <img src="./images/courses/viber-icon.png" alt="">
+            </div>
+            <div class="course-contacts-banner">
+                <div class="contacts-banner-text">
+                    <div class="contacts-banner-title">Контакты</div>
+                    <div class="contacts-banner-subtitle">По вопросам, связанным с регистрацией, следует обращаться по
+                        номеру телефона либо e-mail:</div>
+                    <div class="contacts-banner-item" style="margin-top: 30px;">
+                        <div class="contacts-banner-item-title">Тел.:</div>
+                        <div class="contacts-banner-item-text">+375 29 587-66-81</div>
+                        <div class="contacts-banner-item-description"><img src="./images/courses/viber-icon-2.png"
+                                alt=""></div>
+                    </div>
+                    <div class="contacts-banner-item" style="margin-top: 25px;">
+                        <div class="contacts-banner-item-title">E-mail:</div>
+                        <div class="contacts-banner-item-text" style="text-decoration: underline;">info@minds.by</div>
+                        <div class="contacts-banner-item-description">Вера Викторовна</div>
+                    </div>
+                </div>
+                <img class="contacts-banner-logo" src="./images/abitur/new-logo.png" alt="">
+            </div>
+        </div>
+
     </main>
-    <script>document.querySelectorAll("a").forEach((item) => {item.href = "https://aleksagrri.github.io/sem-demo/" + item.href.split('/').pop()})</script>
+    <script>document.querySelectorAll("a").forEach((item) => { item.href = "https://aleksagrri.github.io/sem-demo/" + item.href.split('/').pop() })</script>
 </body>
+
 </html>
