@@ -2429,3 +2429,81 @@ ol.student-of-subdescription {
 .dropdown:hover .dropbtn {
     border-bottom: 2px solid #6AD;
 }
+
+.post-main-picture {
+    padding: 35px 125px 45px;
+    box-sizing: border-box;
+}
+
+.post-main-picture img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.post-descripton {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+.news-text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    padding: 0 0 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #66AADD;
+}
+
+.news-text * {
+    margin-bottom: 25px;
+}
+
+.news-text a {
+    color: #107ACA;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.news-text h2 {
+    margin-top: 25px;
+    font-size: 30px;
+    line-height: 35.61px;
+    font-weight: 700;
+}
+
+.news-post-badges {
+    display: flex;
+    gap: 40px;
+    margin-top: 35px;
+}
+
+.news-post-badges div {
+    padding: 6px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 17.57px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.post-data {
+    background-color: rgba(34, 54, 69, 0.7);
+}
+
+.post-btn-dow {
+    background-color: #66AADD;
+    cursor: pointer;
+}
+
+.posts-list.news img {
+    width: 22%;
+}
+
+.posts-list.news {
+    padding-top: 5px;
+    flex-wrap: nowrap;
+}
