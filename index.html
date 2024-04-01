@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style-adaptive.css">
   <base href="https://aleksagrri.github.io/sem-demo/" />
 </head>
 
@@ -109,6 +110,103 @@
         </div>
       </nav>
     </div>
+    <section class="top-nav mobile-menu">
+      <div class="logo-mobile">
+        <a href="/"><img src="./images/logo.svg" alt="logo"></a>
+      </div>
+      <button class="btn-search">
+        <img src="./images/icons-search.svg" alt="icon search" />
+      </button>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li class="link-adaptive active-link"><a href="/sem-demo/main-page.html">Главная</a></li>
+        <li class="link-adaptive">
+          <details>
+            <summary>Семинария</summary>
+            <a href="/sem-demo/about-seminarii.html">О семинарии</a>
+            <a href="/sem-demo/history-seminarii.html">История</a>
+            <a href="/sem-demo/diploms.html">Документы</a>
+            <a href="/sem-demo/professors.html">Профессорско-преподавательская корпорация</a>
+            <a href="/sem-demo/faivorit-students.html">Знаменитые выпускники</a>
+            <a href="/sem-demo/diploms.html">Дипломные работы</a>
+          </details>
+        </li>
+        <li class="link-adaptive">
+          <details>
+            <summary>Абитуриентам</summary>
+            <a href="/sem-demo/abitur.html">Абитуриентам - общая информация</a>
+            <a href="/sem-demo/abitur-offline.html">Абитуриентам очная форма</a>
+          </details>
+        </li>
+        <li class="link-adaptive">
+          <details>
+            <summary>Стундентам</summary>
+            <a href="/sem-demo/student.html">Стундентам - общая информация</a>
+            <a href="/sem-demo/student-docs.html">Нормативные документы для
+              студентов</a>
+            <a href="/sem-demo/student-info.html">Информация для студентов</a>
+            <a href="/sem-demo/student-offline.html">Студентам - заочная форма</a>
+            <a href="/sem-demo/student-online.html">Студентам - очная форма</a>
+          </details>
+        </li>
+        <li class="link-adaptive">
+          <details>
+            <summary>Курсы</summary>
+            <a href="/sem-demo/course.html">Курсы - общая информация</a>
+            <a href="/sem-demo/course-podg.html">Подготовительные курсы</a>
+          </details>
+        </li>
+        <li class="link-adaptive">
+          <details>
+            <summary>Публикации</summary>
+            <a href="/sem-demo/about-magazine.html">Журнал</a>
+            <a href="/sem-demo/magazin-number.html">Журнал - все номера</a>
+            <a href="/sem-demo/magazine-open.html">Журнал открытая</a>
+            <a href="/sem-demo/mgazine-achive.html">Архив всех номеров</a>
+            <a href="/sem-demo/place-sale.html">Журнал точки продаж</a>
+          </details>
+        </li>
+        <li class="link-adaptive">
+          <a href="#">Храм</a>
+        </li>
+        <li class="link-adaptive">
+          <a href="#">Библиотека</a>
+        </li>
+        <li class="link-adaptive">
+          <a href="#">Музей</a>
+        </li>
+        <li class="other-info">
+          <div class="social-links-list">
+            <a href="#" class="social-link" target="_blank" rel="noopener nofollow">
+              <img src="./images/social-icons/icons-telegram.svg" alt="telegram link" />
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener nofollow">
+              <img src="./images/social-icons/icons-facebook.svg" alt="facebook link" />
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener nofollow">
+              <img src="./images/social-icons/icons-instagram.svg" alt="instagram link" />
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener nofollow">
+              <img src="./images/social-icons/icons-viber.svg" alt="viber link" />
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener nofollow">
+              <img src="./images/social-icons/icons-vk.svg" alt="vk link" />
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener nofollow">
+              <img src="./images/social-icons/icons-youtube.svg" alt="youtube link" />
+            </a>
+          </div>
+          <div class="right-header-top">
+            <a href="#">Пожертвовать</a>
+            <a href="#">Контакты</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
   </header>
   <main>
     <section class="main-slider" style="background-image: url(./images/bg-slider.png)">

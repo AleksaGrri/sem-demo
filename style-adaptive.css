@@ -1,0 +1,21 @@
+@media (max-width: 1335px) {
+    header {
+        background-size: 10%;
+        background-position: 53%;
+    }
+}
+
+@media (max-width: 1250px) {
+    header .container {
+        display: none;
+    }
+
+    header {
+        background-image: none;
+        padding: 0;
+    }
+
+    .top-nav.mobile-menu {
+        display: flex;
+    }
+}
